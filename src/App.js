@@ -29,6 +29,9 @@ class App extends Component {
     const persons = [...this.state.persons];
     persons[personIndex] = person;
 
+    // this before permits to create a super reactive app without deleting anything
+    // Everything is updated in real time
+
     this.setState({ persons: persons });
   };
 
